@@ -17,10 +17,10 @@ public class Login implements Task, CanBeSilent {
         String userName = authenticate.getUserName();
         String passWord = authenticate.getPassWord();
         actor.attemptsTo(
-                Click.on(),
-                Click.on(),
-                Enter.theValue(userName).into(),
-                Enter.theValue(passWord).into(),
+                Click.on(HomeScreen.ACCOUNT_MENU),
+                Click.on(AccountScreen.LOGIN_MENU),
+                Enter.theValue(userName).into(LoginScreen.EMAIL_BOX),
+                Enter.theValue(passWord).into(LoginScreen.PASSWORD_BOX),
                 Click.on()
         );
     }

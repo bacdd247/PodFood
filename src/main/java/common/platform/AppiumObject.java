@@ -4,10 +4,11 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import net.serenitybdd.screenplay.Actor;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Set;
-import java.util.logging.Logger;
+
 
 public abstract class AppiumObject extends ProviderDriver<AppiumDriver<MobileElement>>{
 

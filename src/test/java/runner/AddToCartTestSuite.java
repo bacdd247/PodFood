@@ -10,7 +10,9 @@ import org.junit.runner.RunWith;
                 "src/test/resources/feature/AddToCart.feature"
         },
         glue = "steps",
-        tags = ""
+        strict = true
+        //        tags = ""
+
 )
 public class AddToCartTestSuite {
 }

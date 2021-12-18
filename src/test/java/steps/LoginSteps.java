@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.steps.ScenarioSteps;
 import screenplay.Authenticate;
+import screenplay.HomeScreen;
 import screenplay.Login;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -18,7 +19,7 @@ public class LoginSteps extends ScenarioSteps {
         );
 
         OnStage.theActorInTheSpotlight().attemptsTo(
-
+            Ensure.that(HomeScreen.HOME_MENU).isDisplayed()
         );
     }
 
